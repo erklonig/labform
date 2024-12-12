@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+  </head>
+  <body>
+    <main class="bg">
+      <section>
+        <h1>Laboratorio III</h1>
+        <h2>Sábado 21 Diciembre, <strong>18hs</strong></h2>
+        <form
+          action="https://formspree.io/f/xovqkvva"
+          method="POST"
+          onsubmit="handleSubmit(event)"
+        >
+          <label>
+            Tu 'alias' de nombre:
+            <input
+              type="text"
+              name="alias"
+              required
+              placeholder="Mr Sunshine"
+            />
+          </label>
+          <label>
+            Email de contacto (opcional):
+            <input
+              type="email"
+              name="email"
+              placeholder="sunshine@somemail.com"
+            />
+          </label>
+          <label for="attendance">Asistencia</label>
+          <select id="attendance" name="attendance" required>
+            <option value="Sí">Sí</option>
+            <option value="Tal vez">Tal vez</option>
+          </select>
+          <button type="submit" id="submit-btn">Enviar</button>
+        </form>
+        <p>
+          <i
+            >Contacto
+            <a href="mailto:hoskoteinos.0@protonmail.com">El oscuro mail</a
+            ><br />Agradecemos avisar cambios en la asistencia.</i
+          >
+        </p>
+      </section>
+    </main>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        alert("Formulario enviado >:).");
+        event.target.submit();
+      }
+    </script>
+  </body>
+</html>

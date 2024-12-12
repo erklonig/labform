@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin-top: 0 !important;
+  font-family: "Almendra", serif !important;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(66, 7, 7) !important;
+  color: #c7c7c7 !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 300px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+input {
+  margin-bottom: 20px !important;
+}
+
+main {
+  position: relative;
+}
+
+input {
+  width: full;
+  margin-top: 0.5em;
+  border-radius: 5%;
+}
+
+button {
+  margin-top: 1em;
+}
+
+h1 {
+  color: #c7c7c7 !important;
+}
+
+h2 {
+  margin-top: 0 !important;
+  color: rgba(199, 199, 199, 0.7) !important;
+  font-size: 1em;
+}
+
+i {
+  font-size: 0.8em;
+}
